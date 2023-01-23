@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+    --sedan-main-color: hsl(31, 77%, 52%);
+    --suvs-main-color: hsl(184, 100%, 22%);
+    --luxury-main-color: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    border-radius: 0.5rem;
+    display: flex;
+    height: 31.5rem; /* 500px */
+    width: 57.5rem; /* 920px */
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 175%;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+img {
+    height: 2.5rem;
+    width: 4rem;
+}
+
+.card-1{
+    background-color: var(--sedan-main-color);
+}
+.card-2{
+    background-color: var(--suvs-main-color);
+}
+.card-3{
+    background-color: var(--luxury-main-color);
+}
+
+p{
+    margin-top: -1.5rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    width: fit-content;
+    border-radius: 5rem;
+    background-color: hsl(0, 0%, 95%);
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.btn-card-1{
+    color: var(--sedan-main-color);
+}
+.btn-card-2{
+    color: var(--suvs-main-color);
+}
+.btn-card-3{
+    color: var(--luxury-main-color);
+}
+
+@media screen and (max-width: 380px) {
+    main{
+        flex-direction: column;
+        max-width: 90%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .card{
+        height: fit-content;
+        min-height: 70vh;
+    }
+
+    p{
+        margin: 0;
+    }
+}
