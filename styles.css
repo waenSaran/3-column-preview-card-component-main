@@ -75,6 +75,7 @@ button {
     width: fit-content;
     border-radius: 5rem;
     background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
 }
 
 button:hover {
